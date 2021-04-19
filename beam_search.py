@@ -5,7 +5,7 @@ import pandas as pd
 from tqdm import tqdm
 from tensorflow.keras.models import load_model
 
-PATH = r'C:\Users\Holl\Documents\Promotion\Projekte\ML\Code Snippet'
+PATH = r'C:\...'
 
 MODEL = PATH + r'\melody_model.h5'
 CHORDS = PATH + r"\chords.csv"
