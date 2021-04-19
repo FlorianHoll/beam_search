@@ -1,7 +1,7 @@
 # beam_search
-Implementation of the Beam Search Algorithm for my Jazz Recurrent Neural Network. The algorithm takes a given chord structure (which was written from another Recurrent Neural Network) and writes a jazz melody on top of it using the Beam Search algorithm. 
+Implementation of the Beam Search Algorithm for my Jazz Recurrent Neural Network. The algorithm takes a given chord structure (which was written by another Recurrent Neural Network) and writes a jazz melody on top of it using the Beam Search algorithm. 
 
-The traditional algorithm has the following hyperparameters: 
+The original algorithm has the following hyperparameters: 
 
 * ```k```: beam width, i.e. number of nodes to explore in each step. 
 * ```alpha```: used for length normalization. The formula for length normalization is ``` 1 / len(candidate) ** alpha * probability(candidate) ``` where the probability of the candidate is calculated as the sum of the log probabilities of all time steps T. If alpha=1, the probabilities are normalized completely. This prevents shorter sequences from being preferred simply due to their shorter length.
